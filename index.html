@@ -1,11 +1,117 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Pixel Art</title>
 	<link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+	<script src="script.js"></script>
 </head>
+
 <body>
 
+	<!--The ability to choose white or black pen-->
+
+	<div id="palette">
+		<div class="pen" style="background-color:white;" onclick="setPenColour('white')"></div>
+		<div class="pen" style="background-color:black;" onclick="setPenColour('black')"></div>
+		<div class="pen" style="background-color:red;" onclick="setPenColour('red')"></div>
+		<div class="pen" style="background-color:green;" onclick="setPenColour('green')"></div>
+		<div class="pen" style="background-color:yellow;" onclick="setPenColour('yellow')"></div>
+		<div class="pen" style="background-color:blue;" onclick="setPenColour('blue')"></div>
+		<div class="pen" style="background-color:bisque;" onclick="setPenColour('bisque')"></div>
+		<div class="pen" style="background-color:brown;" onclick="setPenColour('brown')"></div>
+		<div class="pen" style="background-color:beige" onclick="setPenColour('beige')"></div>
+		<div class="pen" style="background-color:peachpuff;" onclick="setPenColour('peachpuff')"></div>
+		<div class="pen" style="background-color:rgb(122, 26, 26);" onclick="setPenColour('rgb(122, 26, 26)')"></div>
+	</div>
+
+<!-- The pixels that can be turned black or white-->
+
+	<div id="art">
+		<div class="row">
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+		</div>
+		<div class="row">
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+		</div>
+		<div class="row">
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+		</div>
+		<div class="row">
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+		</div>
+		<div class="row">
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+		</div>
+		<div class="row">
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+		</div>
+		<div class="row">
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+		</div>
+		<div class="row">
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+			<div class="pixel" onclick="setPixelColour(this)"></div>
+		</div>
+	</div>
+
+	<img src="minecraftPixal.PNG" alt="steve">
+
 </body>
+
 </html>
